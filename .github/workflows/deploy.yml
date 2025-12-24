@@ -1,49 +1,25 @@
-name: deploy部署 VitePress
+name: deploy 部署 VitePress
 
 on:
-  # trigger deployment on every push to main branch
   push:
-    branches: [master]
-  # trigger deployment manually
-  workflow_dispatch:
-
+    branches:
+      - master
 jobs:
-  docs:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
         with:
-          # fetch all commits to get last updated time or other git log info
-          fetch-depth: 0
+          node-version: 16
+      - run: npm i pnpm -g
+      - run: pnpm install --frozen-lockfile
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          # choose node.js version to use
-          node-version: 22
-          # cache deps for pnpm
-          cache: pnpm
-
-      - name: Install deps
-        run: pnpm install --frozen-lockfile
-
-      # run build script
-      - name: Build VuePress site
+      - name: Build
         run: pnpm docs:build
 
-      # please check out the docs of the workflow for more details
-      # @see https://github.com/crazy-max/ghaction-github-pages
-      - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          # deploy to gh-pages branch
-          target_branch: gh-pages
-          # deploy the default output dir of VuePress
-          build_dir: docs/.vuepress/dist
-        env:
-          # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
