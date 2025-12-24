@@ -1,4 +1,4 @@
-name: docs
+name: deploy部署 VitePress
 
 on:
   # trigger deployment on every push to main branch
