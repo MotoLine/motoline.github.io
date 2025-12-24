@@ -85,8 +85,8 @@ export const teekConfig = defineTeekConfig({
   },
   // 文章默认的作者信息
   author: {
-    name: "Teeker", // 作者名称
-    link: "https://github.com/Kele-Bingtang", // 点击作者名称后跳转的链接
+    name: "MotoLine", // 作者名称
+    link: "https://github.com/MotoLine", // 点击作者名称后跳转的链接
   },
   // 公告配置
   notice: {
@@ -110,7 +110,7 @@ export const teekConfig = defineTeekConfig({
   // 首页 Banner 配置，位于首页顶部
   banner: {
     enabled: true, // 是否启用 Banner
-    name: "Teek", // Banner 标题，默认读取 vitepress 的 title 属性
+    name: "MotoLine", // Banner 标题，默认读取 vitepress 的 title 属性
     bgStyle: "fullImg", // Banner 背景风格：pure 为纯色背景，partImg 为局部图片背景，fullImg 为全屏图片背景
     pureBgColor: "#28282d", // Banner 背景色，bgStyle 为 pure 时生效
     imgSrc: ["/img/bg1.jpg", "/img/bg2.png"], // Banner 图片链接。bgStyle 为 partImg 或 fullImg 时生效
@@ -181,7 +181,7 @@ export const teekConfig = defineTeekConfig({
   ],
   // 博主信息，显示在首页左边第一个卡片。
   blogger: {
-    name: "天客", // 博主昵称
+    name: "MotoLine", // 博主昵称
     slogan: "朝圣的使徒，正在走向编程的至高殿堂！", // 博主签名
     avatar: "https://testingcf.jsdelivr.net/gh/Kele-Bingtang/static/user/avatar1.png", // 博主头像
     shape: "circle-rotate", // 头像风格：square 为方形头像，circle 为圆形头像，circle-rotate 可支持鼠标悬停旋转，circle-rotate-last 将会持续旋转 59s
@@ -275,20 +275,20 @@ export const teekConfig = defineTeekConfig({
       },
     ],
     // 自定义额外信息
-    appendInfo: [{ key: "index", label: "站点作者", value: "Teeker" }],
+    appendInfo: [{ key: "index", label: "站点作者", value: "MotoLine" }],
   },
   // 社交信息配置，通常为一个社交图标，点击后将会跳转到社交软件的个人主页
   social: [
     {
       icon: "mdi:github",
       name: "GitHub",
-      link: "https://github.com/kele-bingtang",
+      link: "https://github.com/MotoLine",
     },
-    {
-      icon: "simple-icons:gitee",
-      name: "Gitee",
-      link: "https://gitee.com/kele-bingtang",
-    },
+    // {
+    //   icon: "simple-icons:gitee",
+    //   name: "Gitee",
+    //   link: "https://gitee.com/MotoLine",
+    // },
   ],
   // 页脚信息组配置
   footerGroup: [
