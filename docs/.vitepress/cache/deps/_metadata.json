@@ -1,0 +1,67 @@
+{
+  "hash": "a6c68ac7",
+  "configHash": "e1ade7ec",
+  "lockfileHash": "957e805d",
+  "browserHash": "c72a0ceb",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/.pnpm/vue@3.5.26/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "b7c3640a",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.7.9/node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "94b494da",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../../node_modules/.pnpm/@vueuse+core@12.8.2/node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "fd2421a3",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/integrations/useFocusTrap": {
+      "src": "../../../../node_modules/.pnpm/@vueuse+integrations@12.8.2_focus-trap@7.7.0/node_modules/@vueuse/integrations/useFocusTrap.mjs",
+      "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
+      "fileHash": "f84f8eac",
+      "needsInterop": false
+    },
+    "vitepress > mark.js/src/vanilla.js": {
+      "src": "../../../../node_modules/.pnpm/mark.js@8.11.1/node_modules/mark.js/src/vanilla.js",
+      "file": "vitepress___mark__js_src_vanilla__js.js",
+      "fileHash": "bf4c2fd2",
+      "needsInterop": false
+    },
+    "vitepress > minisearch": {
+      "src": "../../../../node_modules/.pnpm/minisearch@7.2.0/node_modules/minisearch/dist/es/index.js",
+      "file": "vitepress___minisearch.js",
+      "fileHash": "0644ee7e",
+      "needsInterop": false
+    },
+    "vitepress-theme-teek": {
+      "src": "../../../../node_modules/.pnpm/vitepress-theme-teek@1.5.4_vitepress@1.6.4_@algolia+client-search@5.46.2_postcss@8.5.6__3e4a816d263e0ceed06b20614744f97d/node_modules/vitepress-theme-teek/es/index.mjs",
+      "file": "vitepress-theme-teek.js",
+      "fileHash": "283a4ec9",
+      "needsInterop": false
+    },
+    "echarts": {
+      "src": "../../../../node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/index.js",
+      "file": "echarts.js",
+      "fileHash": "ba36fc3b",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-YJQT3Y2O": {
+      "file": "chunk-YJQT3Y2O.js"
+    },
+    "chunk-54TUQHMW": {
+      "file": "chunk-54TUQHMW.js"
+    },
+    "chunk-PZ5AY32C": {
+      "file": "chunk-PZ5AY32C.js"
+    }
+  }
+}
