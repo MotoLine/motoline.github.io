@@ -13,7 +13,7 @@ hero:
       text: 配置
       link: /reference/config
   image:
-    src: /teek-logo-large.png
+    src: https://vitepress.dev/vitepress-logo-large.svg
     alt: Teek
 
 features:

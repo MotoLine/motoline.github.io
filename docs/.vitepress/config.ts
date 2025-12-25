@@ -19,7 +19,7 @@ export default defineConfig({
   head: [
     [
       "link",
-      { rel: "icon", type: "image/svg+xml", href: "/teek-logo-mini.svg" },
+      { rel: "icon", type: "image/svg+xml", href: "https://vitepress.dev/vitepress-logo-mini.svg" },
     ],
     ["link", { rel: "icon", type: "image/png", href: "/teek-logo-mini.png" }],
     ["meta", { property: "og:type", content: "website" }],
@@ -74,7 +74,7 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: "/teek-logo-mini.svg",
+    logo: "https://vitepress.dev/vitepress-logo-mini.svg",
     darkModeSwitchLabel: "主题",
     sidebarMenuLabel: "菜单",
     returnToTopLabel: "返回顶部",
@@ -99,27 +99,32 @@ export default defineConfig({
         link: "/web/algorithm/complexity",
         activeMatch: "/02.算法与数据结构/",
       },
+      {
+        text: "技术杂谈",
+        link: "/chat/web/mini-ci",
+        activeMatch: "/03.技术杂谈/",
+      },
       //  {
       //   text: "指南",
       //   link: "/guide/intro",
       //   activeMatch: "/02.指南/",
       // },
-      { text: "配置", link: "/reference/config", activeMatch: "/10.配置/" },
+      // { text: "配置", link: "/reference/config", activeMatch: "/10.配置/" },
       // { text: "开发", link: "/develop/intro", activeMatch: "/15.主题开发/" },
-      // {
-      //   text: "功能页",
-      //   items: [
-      //     { text: "归档页", link: "/archives" },
-      //     { text: "清单页", link: "/articleOverview" },
-      //     { text: "登录页", link: "/login" },
-      //     {
-      //       text: "风险链接提示页",
-      //       link: "/risk-link?target=https://vp.teek.top",
-      //     },
-      //     { text: "分类页", link: "/categories" },
-      //     { text: "标签页", link: "/tags" },
-      //   ],
-      // },
+      {
+        text: "功能页",
+        items: [
+          // { text: "归档页", link: "/archives" },
+          // { text: "清单页", link: "/articleOverview" },
+          // { text: "登录页", link: "/login" },
+          {
+            text: "风险链接提示页",
+            link: "/risk-link?target=https://vp.teek.top",
+          },
+          { text: "分类页", link: "/categories" },
+          { text: "标签页", link: "/tags" },
+        ],
+      },
       // { text: "✨ 赞赏", link: "/personal/" },
     ],
     socialLinks: [
