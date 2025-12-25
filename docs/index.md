@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /web/quickstart
+      link: /web/plan/line
     - theme: alt
       text: 配置
       link: /reference/config

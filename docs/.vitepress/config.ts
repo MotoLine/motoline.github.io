@@ -90,27 +90,37 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       {
-        text: "指南",
-        link: "/guide/intro",
-        activeMatch: "/01.指南/",
+        text: "前端物语",
+        link: "/web/plan/line",
+        activeMatch: "/01.前端物语/",
       },
-      { text: "配置", link: "/reference/config", activeMatch: "/10.配置/" },
-      { text: "开发", link: "/develop/intro", activeMatch: "/15.主题开发/" },
       {
-        text: "功能页",
-        items: [
-          { text: "归档页", link: "/archives" },
-          { text: "清单页", link: "/articleOverview" },
-          { text: "登录页", link: "/login" },
-          {
-            text: "风险链接提示页",
-            link: "/risk-link?target=https://vp.teek.top",
-          },
-          { text: "分类页", link: "/categories" },
-          { text: "标签页", link: "/tags" },
-        ],
+        text: "算法与数据结构",
+        link: "/web/algorithm/complexity",
+        activeMatch: "/02.算法与数据结构/",
       },
-      { text: "✨ 赞赏", link: "/personal/" },
+      //  {
+      //   text: "指南",
+      //   link: "/guide/intro",
+      //   activeMatch: "/02.指南/",
+      // },
+      { text: "配置", link: "/reference/config", activeMatch: "/10.配置/" },
+      // { text: "开发", link: "/develop/intro", activeMatch: "/15.主题开发/" },
+      // {
+      //   text: "功能页",
+      //   items: [
+      //     { text: "归档页", link: "/archives" },
+      //     { text: "清单页", link: "/articleOverview" },
+      //     { text: "登录页", link: "/login" },
+      //     {
+      //       text: "风险链接提示页",
+      //       link: "/risk-link?target=https://vp.teek.top",
+      //     },
+      //     { text: "分类页", link: "/categories" },
+      //     { text: "标签页", link: "/tags" },
+      //   ],
+      // },
+      // { text: "✨ 赞赏", link: "/personal/" },
     ],
     socialLinks: [
       {
